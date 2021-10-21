@@ -20,8 +20,8 @@ const km = parseInt(prompt("Insert the km you have to travel"));
 /* ask the AGE of the user */
 const age = parseInt(prompt("Insert your age"));
 
-/* calculate the km insert by user * 0.21 in price*/
-const unitPrice = km * 0.21;
+/* calculate the km inserted by user * 0.21 in price*/
+const unitPrice = (km * 0.21).toFixed(2);
 
 /* if the user is < 18 the result in price is - 20% 
 and if the user is > 65 the result in price is - 40%*/
