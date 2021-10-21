@@ -28,20 +28,24 @@ console.log("full price is: " ,unitPrice); //console debug
 
 /* if the user is < 18 the result in price is - 20% 
 and if the user is > 65 the result in price is - 40%*/
+
+let percentile;
+let sale;
+
 if (age < 18) {
-    let percentile = (20 / 100) * unitPrice;
+    percentile = (20 / 100) * unitPrice;
     console.log("the percentile to subtract" ,percentile); //console debug
 
-    let sale = (unitPrice - percentile).toFixed(2);
+    sale = (unitPrice - percentile).toFixed(2);
     console.log("the final price under 18 is: ", sale); //console debug
 
     outputSale.innerHTML = `Your Ticket costs ${unitPrice}€`
     output.innerHTML = `Your Ticket costs ${sale}€ with 20% sale`
 } else if (age > 65) {
-    let percentile = (40 / 100) * unitPrice;
+    percentile = (40 / 100) * unitPrice;
     console.log("the percentile to subtract" ,percentile); //console debug
 
-    let sale = (unitPrice - percentile).toFixed(2);
+    sale = (unitPrice - percentile).toFixed(2);
     console.log("the final price over 65 is: ", sale); //console debug
 
     outputSale.innerHTML = `Your Ticket costs ${unitPrice}€`
